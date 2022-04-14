@@ -1,10 +1,10 @@
 package com.example.w22comp1008gcw12;
 
-public class Circle {
+public class Circle implements TwoDShape{
     private double radius;
     private String surfaceName;
 
-    public Circle(double radius, String surfaceName) {
+    public Circle(String surfaceName, double radius) {
         setRadius(radius);
         setSurfaceName(surfaceName);
     }
@@ -32,6 +32,8 @@ public class Circle {
             throw new IllegalArgumentException("surface name must have 4 or more characters");
     }
 
+
+    @Override
     public double getArea()
     {
         return Math.PI*radius*radius;

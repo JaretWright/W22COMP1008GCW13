@@ -1,6 +1,6 @@
 package com.example.w22comp1008gcw12;
 
-public class Rectangle {
+public class Rectangle implements TwoDShape{
     private double width, height;
     private String surfaceName;
 
