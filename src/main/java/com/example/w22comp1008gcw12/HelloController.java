@@ -13,7 +13,7 @@ public class HelloController implements Initializable {
 
     @FXML
     protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+        System.out.println("Hello World");
     }
 
     @Override

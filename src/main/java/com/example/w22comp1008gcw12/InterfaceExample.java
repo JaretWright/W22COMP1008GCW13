@@ -13,19 +13,21 @@ public class InterfaceExample {
         walls.add(new Rectangle("wall 3", 15, 8));
         walls.add(new Rectangle("wall 4", 12, 8));
         walls.add(new Rectangle("ceiling", 15, 10));
-        walls.add(new Rectangle("wall 1", 12, 8));
-        walls.add(new Rectangle("wall 2", 12, 8));
-        walls.add(new Rectangle("wall 3", 10, 8));
-        walls.add(new Rectangle("wall 4", 10, 8));
+        walls.add(new Rectangle("wall 5", 12, 8));
+        walls.add(new Rectangle("wall 6", 12, 8));
+        walls.add(new Rectangle("wall 7", 10, 8));
+        walls.add(new Rectangle("wall 8", 10, 8));
         walls.add(new Rectangle("ceiling", 12, 10));
         walls.add(new Rectangle("North wall", 14, 8));
         walls.add(new Circle("oval office", 20));
 
         //your goal - calculate the total surface area in the room and type "done" in the group chat
         double totalSurface = 0;
-        for (TwoDShape shape : walls)
+
+        //type of object   temp variable name    collection we want to iterate over
+        for (TwoDShape     wall                : walls)
         {
-            totalSurface += shape.getArea();
+            totalSurface += wall.getArea();
         }
 
 

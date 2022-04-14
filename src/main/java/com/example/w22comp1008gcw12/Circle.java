@@ -14,10 +14,10 @@ public class Circle implements TwoDShape{
     }
 
     public void setRadius(double radius) {
-        if (radius>0)
-            this.radius = radius;
-        else
+        if (radius<= 0 || radius > 10)
             throw new IllegalArgumentException("radius must be greater than 0");
+        else
+            this.radius = radius;
     }
 
     public String getSurfaceName() {
